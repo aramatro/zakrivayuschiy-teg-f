@@ -34,7 +34,7 @@
   gap: 20px;
   border: var(--content-border);
   padding-block: clamp(120px, 8.9vw, 128px);
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   text-transform: uppercase;
   background-color: var(--background-color);
 }
@@ -83,7 +83,7 @@
   position: absolute;
   z-index: 2;
   opacity: 0.5;
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-size: var(--accent-font-size);
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   mix-blend-mode: hard-light;
@@ -145,27 +145,24 @@
 }
 
 .card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  border: 1px solid transparent;
   background-color: var(--background-color);
-  transition: border-color 0.3s ease;
   cursor: pointer;
+  inline-size: 51px;
   block-size: 38px;
+  border: 1px solid transparent;
 }
 
 .card__icon-button:focus {
   outline: none;
 }
 
-.card__icon-button:focus-visible {
-  border: 1px solid #000;
+.card__icon-button:focus-visible .like-icon {
+  outline: 2px solid #000;
+  transition: 0.3s ease;
 }
 
 .like-icon {
-  inline-size: 39px;
-  block-size: 36px;
+  outline: 2px solid transparent;
 }
 
 .card__like-button {
@@ -175,7 +172,7 @@
 
 .button {
   border: var(--content-border);
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-weight: 400;
   font-size: var(--accent-font-size);
   line-height: 90%;
@@ -187,7 +184,7 @@
   position: relative;
   z-index: 1;
   color: #fff;
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-size: var(--accent-font-size);
   mix-blend-mode: difference;
   top: 2px;
@@ -265,7 +262,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-size: var(--accent-font-size);
 }
 
@@ -274,7 +271,7 @@
 }
 
 .dialog__text p {
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-size: var(--accent-font-size);
   line-height: 150%;
 }
