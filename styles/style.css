@@ -148,7 +148,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  border: none;
   border: 1px solid transparent;
   background-color: var(--background-color);
   transition: border-color 0.3s ease;
@@ -296,6 +295,7 @@
 @media (width <= 375px) {
   .save-section__button {
     flex-direction: column;
+    block-size: 84px;
   }
   .save-section__button svg {
     block-size: 28px;
@@ -303,8 +303,5 @@
   .image-label {
     inset-inline-end: 13px;
     inset-block-start: 22px;
-  }
-  .save-section__button {
-    block-size: 84px;
   }
 }

@@ -94,9 +94,9 @@
 
 .like-icon.is-liked .sparks {
   fill: var(--heart-sparks-color);
-  animation: sparkle-fly 0.3s ease-in 1 forwards; 
+  animation: sparkle-fly 0.3s ease-in 1 forwards;
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-pulse 0.1s ease-in 1; 
+  animation: heart-pulse 0.1s ease-in 1;
 }
